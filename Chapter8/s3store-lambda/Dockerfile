@@ -1,4 +1,4 @@
-FROM amazon/aws-lambda-go:latest as build
+FROM amazon/aws-lambda-go as build
 
 RUN yum install -y golang
 RUN go env -w GOPROXY=direct
